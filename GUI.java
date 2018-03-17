@@ -128,8 +128,6 @@ public class GUI extends JFrame implements ActionListener
         {  
             /*
              * CORRECT ANSWER: calculate and show score
-             * TODO: ask user to enter their name in the entry box
-             *       use your highscores code to add new high score
              */
             String userWord = userEntry.getText();
             if(userWord.toUpperCase().equals(playWord))
@@ -173,9 +171,7 @@ public class GUI extends JFrame implements ActionListener
                     }
                 }
 
-                //ADD MORE MESSAGES?
-
-                game.setText("Score: " + score + "... " + msg + "\t" + scoreMsg);
+               game.setText("Score: " + score + "... " + msg + "\t" + scoreMsg);
 
                 DateTest now = new DateTest();
                 sp.add((int)score, name);
